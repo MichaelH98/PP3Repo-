@@ -1,0 +1,9 @@
+\\vmware-host\Shared Folders\Desktop\HarrisMichael_CodeExercise1\HarrisMichael_CodeExercise1\bin\Debug\HarrisMichael_CodeExercise1.exe.config
+\\vmware-host\Shared Folders\Desktop\HarrisMichael_CodeExercise1\HarrisMichael_CodeExercise1\bin\Debug\HarrisMichael_CodeExercise1.exe
+\\vmware-host\Shared Folders\Desktop\HarrisMichael_CodeExercise1\HarrisMichael_CodeExercise1\bin\Debug\HarrisMichael_CodeExercise1.pdb
+\\vmware-host\Shared Folders\Desktop\HarrisMichael_CodeExercise1\HarrisMichael_CodeExercise1\obj\Debug\HarrisMichael_CodeExercise1.csprojAssemblyReference.cache
+\\vmware-host\Shared Folders\Desktop\HarrisMichael_CodeExercise1\HarrisMichael_CodeExercise1\obj\Debug\HarrisMichael_CodeExercise1.MainWindow.resources
+\\vmware-host\Shared Folders\Desktop\HarrisMichael_CodeExercise1\HarrisMichael_CodeExercise1\obj\Debug\HarrisMichael_CodeExercise1.Properties.Resources.resources
+\\vmware-host\Shared Folders\Desktop\HarrisMichael_CodeExercise1\HarrisMichael_CodeExercise1\obj\Debug\HarrisMichael_CodeExercise1.csproj.GenerateResource.cache
+\\vmware-host\Shared Folders\Desktop\HarrisMichael_CodeExercise1\HarrisMichael_CodeExercise1\obj\Debug\HarrisMichael_CodeExercise1.exe
+\\vmware-host\Shared Folders\Desktop\HarrisMichael_CodeExercise1\HarrisMichael_CodeExercise1\obj\Debug\HarrisMichael_CodeExercise1.pdb
