@@ -76,6 +76,7 @@
             this.SpecialButton.TabIndex = 3;
             this.SpecialButton.Text = "SPC";
             this.SpecialButton.UseVisualStyleBackColor = true;
+            this.SpecialButton.Click += new System.EventHandler(this.SpecialButton_Click);
             // 
             // DeleteButton
             // 

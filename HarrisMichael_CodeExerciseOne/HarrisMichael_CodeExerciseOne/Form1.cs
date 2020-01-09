@@ -69,5 +69,18 @@ namespace HarrisMichael_CodeExerciseOne
 
             }
         }
+
+        private void SpecialButton_Click(object sender, EventArgs e)
+        {
+            if (CoreClassesLB.SelectedItem != null)
+            {
+                SpecialClassesLB.Items.Add(CoreClassesLB.SelectedItem);
+                CoreClassesLB.Items.RemoveAt(CoreClassesLB.SelectedIndex);
+            }
+            else
+            {
+
+            }
+        }
     }
 }
