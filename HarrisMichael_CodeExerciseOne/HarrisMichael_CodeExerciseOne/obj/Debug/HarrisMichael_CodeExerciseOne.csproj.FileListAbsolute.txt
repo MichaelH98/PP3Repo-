@@ -1,0 +1,10 @@
+\\vmware-host\Shared Folders\Desktop\PP3Repo-master\HarrisMichael_CodeExerciseOne\HarrisMichael_CodeExerciseOne\bin\Debug\HarrisMichael_CodeExerciseOne.exe.config
+\\vmware-host\Shared Folders\Desktop\PP3Repo-master\HarrisMichael_CodeExerciseOne\HarrisMichael_CodeExerciseOne\bin\Debug\HarrisMichael_CodeExerciseOne.exe
+\\vmware-host\Shared Folders\Desktop\PP3Repo-master\HarrisMichael_CodeExerciseOne\HarrisMichael_CodeExerciseOne\bin\Debug\HarrisMichael_CodeExerciseOne.pdb
+\\vmware-host\Shared Folders\Desktop\PP3Repo-master\HarrisMichael_CodeExerciseOne\HarrisMichael_CodeExerciseOne\obj\Debug\HarrisMichael_CodeExerciseOne.csprojAssemblyReference.cache
+\\vmware-host\Shared Folders\Desktop\PP3Repo-master\HarrisMichael_CodeExerciseOne\HarrisMichael_CodeExerciseOne\obj\Debug\HarrisMichael_CodeExerciseOne.IPhone.resources
+\\vmware-host\Shared Folders\Desktop\PP3Repo-master\HarrisMichael_CodeExerciseOne\HarrisMichael_CodeExerciseOne\obj\Debug\HarrisMichael_CodeExerciseOne.Input.resources
+\\vmware-host\Shared Folders\Desktop\PP3Repo-master\HarrisMichael_CodeExerciseOne\HarrisMichael_CodeExerciseOne\obj\Debug\HarrisMichael_CodeExerciseOne.Properties.Resources.resources
+\\vmware-host\Shared Folders\Desktop\PP3Repo-master\HarrisMichael_CodeExerciseOne\HarrisMichael_CodeExerciseOne\obj\Debug\HarrisMichael_CodeExerciseOne.csproj.GenerateResource.cache
+\\vmware-host\Shared Folders\Desktop\PP3Repo-master\HarrisMichael_CodeExerciseOne\HarrisMichael_CodeExerciseOne\obj\Debug\HarrisMichael_CodeExerciseOne.exe
+\\vmware-host\Shared Folders\Desktop\PP3Repo-master\HarrisMichael_CodeExerciseOne\HarrisMichael_CodeExerciseOne\obj\Debug\HarrisMichael_CodeExerciseOne.pdb

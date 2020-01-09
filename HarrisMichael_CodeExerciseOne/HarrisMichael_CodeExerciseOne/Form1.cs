@@ -33,5 +33,28 @@ namespace HarrisMichael_CodeExerciseOne
                 //this.Size = new Size(376, 720);
             }
         }
+
+        private void classToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Input newI = new Input();
+            newI.AddToListBox += NewI_AddToListBox;
+            newI.ShowDialog();
+        }
+
+        private void NewI_AddToListBox(object sender, ClassEventArgs e)
+        {
+            Classs newClass = new Classs();
+            newClass.Name = e.Name;
+            newClass.Type = e.Type;
+
+            if (newClass.Type)
+            {
+                CoreClassesLB.Items.Add(newClass);
+            }
+            else
+            {
+                SpecialClassesLB.Items.Add(newClass);
+            }
+        }
     }
 }
