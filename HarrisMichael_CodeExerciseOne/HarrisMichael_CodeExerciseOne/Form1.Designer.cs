@@ -86,6 +86,7 @@
             this.DeleteButton.TabIndex = 4;
             this.DeleteButton.Text = "Delete";
             this.DeleteButton.UseVisualStyleBackColor = true;
+            this.DeleteButton.Click += new System.EventHandler(this.DeleteButton_Click);
             // 
             // menuStrip1
             // 

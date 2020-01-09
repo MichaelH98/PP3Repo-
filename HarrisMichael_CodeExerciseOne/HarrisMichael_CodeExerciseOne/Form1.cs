@@ -38,7 +38,7 @@ namespace HarrisMichael_CodeExerciseOne
         {
             Input newI = new Input();
             newI.AddToListBox += NewI_AddToListBox;
-            newI.ShowDialog();
+            newI.Show();
         }
 
         private void NewI_AddToListBox(object sender, ClassEventArgs e)
@@ -80,6 +80,18 @@ namespace HarrisMichael_CodeExerciseOne
             else
             {
 
+            }
+        }
+
+        private void DeleteButton_Click(object sender, EventArgs e)
+        {
+            if (CoreClassesLB.SelectedItem != null)
+            {
+                CoreClassesLB.Items.Remove(CoreClassesLB.SelectedItem);
+            }
+            else if (SpecialClassesLB.SelectedItem != null)
+            {
+                SpecialClassesLB.Items.Remove(SpecialClassesLB.SelectedItem);
             }
         }
     }
