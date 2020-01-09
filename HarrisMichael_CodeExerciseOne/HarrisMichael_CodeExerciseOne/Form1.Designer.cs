@@ -66,6 +66,7 @@
             this.CoreButton.TabIndex = 2;
             this.CoreButton.Text = "Core";
             this.CoreButton.UseVisualStyleBackColor = true;
+            this.CoreButton.Click += new System.EventHandler(this.CoreButton_Click);
             // 
             // SpecialButton
             // 
@@ -94,7 +95,7 @@
             this.newToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(661, 42);
+            this.menuStrip1.Size = new System.Drawing.Size(661, 40);
             this.menuStrip1.TabIndex = 5;
             this.menuStrip1.Text = "menuStrip1";
             // 
