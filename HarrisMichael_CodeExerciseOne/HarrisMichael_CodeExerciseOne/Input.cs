@@ -23,6 +23,7 @@ namespace HarrisMichael_CodeExerciseOne
         {
             if (AddToListBox != null)
             {
+                //Make the args and invoke the handler method
                 ClassEventArgs args = new ClassEventArgs();
 
                 args.Name = ClassNameTB.Text;
