@@ -15,6 +15,8 @@ namespace HarrisMichael_CodeExercise2
 {
     public partial class MainWindow : Form
     {
+        List<Movie> MovieList = new List<Movie>();
+
         MySqlConnection conn = new MySqlConnection();
 
         DataTable theData = new DataTable();
@@ -136,6 +138,17 @@ namespace HarrisMichael_CodeExercise2
                 pubTB.Text = m.Publisher;
                 authorTB.Text = m.Author;
                 genreTB.Text = m.Genre;
+            }
+        }
+
+        private void deleteButton_Click(object sender, EventArgs e)
+        {
+            foreach (ListViewItem lvi in MovieLB.Items)
+            {
+                if (lvi.Selected)
+                {
+                    MovieLB.Items.Remove(lvi);
+                }
             }
         }
     }

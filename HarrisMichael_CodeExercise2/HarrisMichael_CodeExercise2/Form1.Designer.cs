@@ -32,7 +32,9 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainWindow));
             this.backgroundRed = new System.Windows.Forms.PictureBox();
             this.ControlsGB = new System.Windows.Forms.GroupBox();
+            this.yearUD = new System.Windows.Forms.NumericUpDown();
             this.MovieLB = new System.Windows.Forms.ListView();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.genreLabel = new System.Windows.Forms.Label();
             this.authorLabel = new System.Windows.Forms.Label();
             this.publisherLabel = new System.Windows.Forms.Label();
@@ -42,8 +44,8 @@
             this.authorTB = new System.Windows.Forms.TextBox();
             this.pubTB = new System.Windows.Forms.TextBox();
             this.titleTB = new System.Windows.Forms.TextBox();
-            this.yearUD = new System.Windows.Forms.NumericUpDown();
-            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.saveButton = new System.Windows.Forms.Button();
+            this.deleteButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.backgroundRed)).BeginInit();
             this.ControlsGB.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.yearUD)).BeginInit();
@@ -61,6 +63,8 @@
             // ControlsGB
             // 
             this.ControlsGB.BackColor = System.Drawing.Color.Maroon;
+            this.ControlsGB.Controls.Add(this.deleteButton);
+            this.ControlsGB.Controls.Add(this.saveButton);
             this.ControlsGB.Controls.Add(this.yearUD);
             this.ControlsGB.Controls.Add(this.MovieLB);
             this.ControlsGB.Controls.Add(this.genreLabel);
@@ -79,6 +83,28 @@
             this.ControlsGB.TabStop = false;
             this.ControlsGB.Text = "Controls";
             // 
+            // yearUD
+            // 
+            this.yearUD.Location = new System.Drawing.Point(191, 118);
+            this.yearUD.Maximum = new decimal(new int[] {
+            2020,
+            0,
+            0,
+            0});
+            this.yearUD.Minimum = new decimal(new int[] {
+            1900,
+            0,
+            0,
+            0});
+            this.yearUD.Name = "yearUD";
+            this.yearUD.Size = new System.Drawing.Size(261, 31);
+            this.yearUD.TabIndex = 11;
+            this.yearUD.Value = new decimal(new int[] {
+            1900,
+            0,
+            0,
+            0});
+            // 
             // MovieLB
             // 
             this.MovieLB.HideSelection = false;
@@ -90,6 +116,16 @@
             this.MovieLB.TabIndex = 10;
             this.MovieLB.UseCompatibleStateImageBehavior = false;
             this.MovieLB.DoubleClick += new System.EventHandler(this.MovieLB_DoubleClick);
+            // 
+            // imageList1
+            // 
+            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList1.Images.SetKeyName(0, "google.png");
+            this.imageList1.Images.SetKeyName(1, "netflix.png");
+            this.imageList1.Images.SetKeyName(2, "apple.png");
+            this.imageList1.Images.SetKeyName(3, "amazon.png");
+            this.imageList1.Images.SetKeyName(4, "facebook.png");
             // 
             // genreLabel
             // 
@@ -164,37 +200,24 @@
             this.titleTB.Size = new System.Drawing.Size(261, 31);
             this.titleTB.TabIndex = 0;
             // 
-            // yearUD
+            // saveButton
             // 
-            this.yearUD.Location = new System.Drawing.Point(191, 118);
-            this.yearUD.Maximum = new decimal(new int[] {
-            2020,
-            0,
-            0,
-            0});
-            this.yearUD.Minimum = new decimal(new int[] {
-            1900,
-            0,
-            0,
-            0});
-            this.yearUD.Name = "yearUD";
-            this.yearUD.Size = new System.Drawing.Size(261, 31);
-            this.yearUD.TabIndex = 11;
-            this.yearUD.Value = new decimal(new int[] {
-            1900,
-            0,
-            0,
-            0});
+            this.saveButton.Location = new System.Drawing.Point(29, 344);
+            this.saveButton.Name = "saveButton";
+            this.saveButton.Size = new System.Drawing.Size(253, 42);
+            this.saveButton.TabIndex = 12;
+            this.saveButton.Text = "Save";
+            this.saveButton.UseVisualStyleBackColor = true;
             // 
-            // imageList1
+            // deleteButton
             // 
-            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
-            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageList1.Images.SetKeyName(0, "google.png");
-            this.imageList1.Images.SetKeyName(1, "netflix.png");
-            this.imageList1.Images.SetKeyName(2, "apple.png");
-            this.imageList1.Images.SetKeyName(3, "amazon.png");
-            this.imageList1.Images.SetKeyName(4, "facebook.png");
+            this.deleteButton.Location = new System.Drawing.Point(288, 344);
+            this.deleteButton.Name = "deleteButton";
+            this.deleteButton.Size = new System.Drawing.Size(237, 42);
+            this.deleteButton.TabIndex = 13;
+            this.deleteButton.Text = "Delete";
+            this.deleteButton.UseVisualStyleBackColor = true;
+            this.deleteButton.Click += new System.EventHandler(this.deleteButton_Click);
             // 
             // MainWindow
             // 
@@ -233,6 +256,8 @@
         private System.Windows.Forms.ListView MovieLB;
         private System.Windows.Forms.NumericUpDown yearUD;
         private System.Windows.Forms.ImageList imageList1;
+        private System.Windows.Forms.Button deleteButton;
+        private System.Windows.Forms.Button saveButton;
     }
 }
 
