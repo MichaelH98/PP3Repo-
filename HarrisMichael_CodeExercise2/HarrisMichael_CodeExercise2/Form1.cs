@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 using MySql.Data.MySqlClient;
-
+using System.Data.SqlClient;
 
 namespace HarrisMichael_CodeExercise2
 {
@@ -149,6 +149,78 @@ namespace HarrisMichael_CodeExercise2
                 {
                     MovieLB.Items.Remove(lvi);
                 }
+            }
+        }
+        //Allow user to move thru listviewitems
+
+        private void saveButton_Click(object sender, EventArgs e)
+        {
+            string title;
+            decimal year;
+            string publisher;
+            string author;
+            string genre;
+
+            for (int i = 0; i < MovieLB.Items.Count; i++)
+            {
+                title = MovieLB.Items[i].SubItems[2].Text;
+                year = Convert.ToDecimal(MovieLB.Items[i].SubItems[3].Text);
+                publisher = MovieLB.Items[i].SubItems[4].Text;
+                author = MovieLB.Items[i].SubItems[5].Text;
+                genre = MovieLB.Items[i].SubItems[6].Text;
+
+                string sql = "INSERT INTO SeriesTitles (Title, YearReleased, Publisher, Author, Genre)"
+                    + " VALUES (" + title + "," + year + "," + publisher + "," + author + "," + genre + ")";
+
+                MySqlConnection conn = new MySqlConnection();
+                SqlConnection cn = null;
+                SqlCommand cmd = new SqlCommand();
+
+                
+                cmd.Connection = cn;
+                cmd.CommandText = sql;
+                cmd.ExecuteNonQuery();
+
+
+                this.Close();
+            }
+        }
+
+        private void BackButton_Click(object sender, EventArgs e)
+        {
+            if (currentR < theData.Select().Length + 1)
+            {
+                // update the data
+                currentR--;
+                titleTB.Text = theData.Rows[currentR]["Title"].ToString();
+                pubTB.Text = theData.Rows[currentR]["Publisher"].ToString();
+                authorTB.Text = theData.Rows[currentR]["Author"].ToString();
+                yearUD.Value = decimal.Parse(theData.Rows[currentR]["YearReleased"].ToString());
+                genreTB.Text = theData.Rows[currentR]["Genre"].ToString();
+                addTo--;
+            }
+            else
+            {
+
+            }
+        }
+
+        private void ForwardButton_Click(object sender, EventArgs e)
+        {
+            if (currentR < theData.Select().Length - 1)
+            {
+                // update the data
+                currentR++;
+                titleTB.Text = theData.Rows[currentR]["Title"].ToString();
+                pubTB.Text = theData.Rows[currentR]["Publisher"].ToString();
+                authorTB.Text = theData.Rows[currentR]["Author"].ToString();
+                yearUD.Value = decimal.Parse(theData.Rows[currentR]["YearReleased"].ToString());
+                genreTB.Text = theData.Rows[currentR]["Genre"].ToString();
+                addTo--;
+            }
+            else
+            {
+
             }
         }
     }

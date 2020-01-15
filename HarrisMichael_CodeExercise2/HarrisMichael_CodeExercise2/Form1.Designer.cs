@@ -32,6 +32,10 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainWindow));
             this.backgroundRed = new System.Windows.Forms.PictureBox();
             this.ControlsGB = new System.Windows.Forms.GroupBox();
+            this.ForwardButton = new System.Windows.Forms.Button();
+            this.BackButton = new System.Windows.Forms.Button();
+            this.deleteButton = new System.Windows.Forms.Button();
+            this.saveButton = new System.Windows.Forms.Button();
             this.yearUD = new System.Windows.Forms.NumericUpDown();
             this.MovieLB = new System.Windows.Forms.ListView();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
@@ -44,8 +48,6 @@
             this.authorTB = new System.Windows.Forms.TextBox();
             this.pubTB = new System.Windows.Forms.TextBox();
             this.titleTB = new System.Windows.Forms.TextBox();
-            this.saveButton = new System.Windows.Forms.Button();
-            this.deleteButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.backgroundRed)).BeginInit();
             this.ControlsGB.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.yearUD)).BeginInit();
@@ -63,6 +65,8 @@
             // ControlsGB
             // 
             this.ControlsGB.BackColor = System.Drawing.Color.Maroon;
+            this.ControlsGB.Controls.Add(this.ForwardButton);
+            this.ControlsGB.Controls.Add(this.BackButton);
             this.ControlsGB.Controls.Add(this.deleteButton);
             this.ControlsGB.Controls.Add(this.saveButton);
             this.ControlsGB.Controls.Add(this.yearUD);
@@ -82,6 +86,46 @@
             this.ControlsGB.TabIndex = 1;
             this.ControlsGB.TabStop = false;
             this.ControlsGB.Text = "Controls";
+            // 
+            // ForwardButton
+            // 
+            this.ForwardButton.Location = new System.Drawing.Point(490, 299);
+            this.ForwardButton.Name = "ForwardButton";
+            this.ForwardButton.Size = new System.Drawing.Size(35, 39);
+            this.ForwardButton.TabIndex = 15;
+            this.ForwardButton.Text = ">";
+            this.ForwardButton.UseVisualStyleBackColor = true;
+            this.ForwardButton.Click += new System.EventHandler(this.ForwardButton_Click);
+            // 
+            // BackButton
+            // 
+            this.BackButton.Location = new System.Drawing.Point(29, 299);
+            this.BackButton.Name = "BackButton";
+            this.BackButton.Size = new System.Drawing.Size(35, 39);
+            this.BackButton.TabIndex = 14;
+            this.BackButton.Text = "<";
+            this.BackButton.UseVisualStyleBackColor = true;
+            this.BackButton.Click += new System.EventHandler(this.BackButton_Click);
+            // 
+            // deleteButton
+            // 
+            this.deleteButton.Location = new System.Drawing.Point(288, 344);
+            this.deleteButton.Name = "deleteButton";
+            this.deleteButton.Size = new System.Drawing.Size(237, 42);
+            this.deleteButton.TabIndex = 13;
+            this.deleteButton.Text = "Delete";
+            this.deleteButton.UseVisualStyleBackColor = true;
+            this.deleteButton.Click += new System.EventHandler(this.deleteButton_Click);
+            // 
+            // saveButton
+            // 
+            this.saveButton.Location = new System.Drawing.Point(29, 344);
+            this.saveButton.Name = "saveButton";
+            this.saveButton.Size = new System.Drawing.Size(253, 42);
+            this.saveButton.TabIndex = 12;
+            this.saveButton.Text = "Save";
+            this.saveButton.UseVisualStyleBackColor = true;
+            this.saveButton.Click += new System.EventHandler(this.saveButton_Click);
             // 
             // yearUD
             // 
@@ -200,25 +244,6 @@
             this.titleTB.Size = new System.Drawing.Size(261, 31);
             this.titleTB.TabIndex = 0;
             // 
-            // saveButton
-            // 
-            this.saveButton.Location = new System.Drawing.Point(29, 344);
-            this.saveButton.Name = "saveButton";
-            this.saveButton.Size = new System.Drawing.Size(253, 42);
-            this.saveButton.TabIndex = 12;
-            this.saveButton.Text = "Save";
-            this.saveButton.UseVisualStyleBackColor = true;
-            // 
-            // deleteButton
-            // 
-            this.deleteButton.Location = new System.Drawing.Point(288, 344);
-            this.deleteButton.Name = "deleteButton";
-            this.deleteButton.Size = new System.Drawing.Size(237, 42);
-            this.deleteButton.TabIndex = 13;
-            this.deleteButton.Text = "Delete";
-            this.deleteButton.UseVisualStyleBackColor = true;
-            this.deleteButton.Click += new System.EventHandler(this.deleteButton_Click);
-            // 
             // MainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -258,6 +283,8 @@
         private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.Button deleteButton;
         private System.Windows.Forms.Button saveButton;
+        private System.Windows.Forms.Button ForwardButton;
+        private System.Windows.Forms.Button BackButton;
     }
 }
 
