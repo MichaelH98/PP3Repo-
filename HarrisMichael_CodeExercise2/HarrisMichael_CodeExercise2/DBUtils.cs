@@ -35,7 +35,7 @@ namespace HarrisMichael_CodeExercise2
             }
 
             // return the connection string
-            return "server=" + serverIP + ";userid=mjAdmin;pwd=password;database=MushroomDatabaste;SslMode=none;port=" + port;
+            return "server=" + serverIP + ";userid=mjAdmin;pwd=password;database=Series;SslMode=none;port=" + port;
         }
 
         // method to connect to the database

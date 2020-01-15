@@ -21,5 +21,10 @@ namespace HarrisMichael_CodeExercise2
         public string Publisher { get => publisher; set => publisher = value; }
         public string Author { get => author; set => author = value; }
         public string Genre { get => genre; set => genre = value; }
+
+        public override string ToString()
+        {
+            return Title;
+        }
     }
 }

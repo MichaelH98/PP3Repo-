@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainWindow));
             this.backgroundRed = new System.Windows.Forms.PictureBox();
             this.ControlsGB = new System.Windows.Forms.GroupBox();
             this.MovieLB = new System.Windows.Forms.ListView();
@@ -88,6 +89,7 @@
             this.MovieLB.SmallImageList = this.imageList1;
             this.MovieLB.TabIndex = 10;
             this.MovieLB.UseCompatibleStateImageBehavior = false;
+            this.MovieLB.DoubleClick += new System.EventHandler(this.MovieLB_DoubleClick);
             // 
             // genreLabel
             // 
@@ -186,9 +188,13 @@
             // 
             // imageList1
             // 
-            this.imageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
-            this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
+            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
             this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList1.Images.SetKeyName(0, "google.png");
+            this.imageList1.Images.SetKeyName(1, "netflix.png");
+            this.imageList1.Images.SetKeyName(2, "apple.png");
+            this.imageList1.Images.SetKeyName(3, "amazon.png");
+            this.imageList1.Images.SetKeyName(4, "facebook.png");
             // 
             // MainWindow
             // 

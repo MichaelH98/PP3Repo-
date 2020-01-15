@@ -92,7 +92,7 @@ namespace HarrisMichael_CodeExercise2
             {
                 Movie m = new Movie();
 
-                m.Id = int.Parse(theData.Rows[currentR]["id"].ToString());
+               // m.Id = int.Parse(theData.Rows[currentR]["id"].ToString());
                 m.Title = theData.Rows[currentR]["Title"].ToString();
                 m.Yr = decimal.Parse(theData.Rows[currentR]["YearReleased"].ToString());
                 m.Publisher = theData.Rows[currentR]["Publisher"].ToString();
@@ -123,6 +123,20 @@ namespace HarrisMichael_CodeExercise2
             conn.Close();
 
             return true;
+        }
+
+        private void MovieLB_DoubleClick(object sender, EventArgs e)
+        {
+            if (MovieLB.SelectedItems != null)
+            {
+                Movie m = (Movie)MovieLB.SelectedItems[0].Tag;
+
+                titleTB.Text = m.Title;
+                yearUD.Value = m.Yr;
+                pubTB.Text = m.Publisher;
+                authorTB.Text = m.Author;
+                genreTB.Text = m.Genre;
+            }
         }
     }
 }
