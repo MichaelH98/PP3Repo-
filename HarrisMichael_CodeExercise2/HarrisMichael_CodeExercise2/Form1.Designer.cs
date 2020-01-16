@@ -87,7 +87,7 @@
             // 
             // ForwardButton
             // 
-            this.ForwardButton.Location = new System.Drawing.Point(490, 299);
+            this.ForwardButton.Location = new System.Drawing.Point(490, 316);
             this.ForwardButton.Name = "ForwardButton";
             this.ForwardButton.Size = new System.Drawing.Size(35, 39);
             this.ForwardButton.TabIndex = 15;
@@ -97,7 +97,7 @@
             // 
             // BackButton
             // 
-            this.BackButton.Location = new System.Drawing.Point(29, 299);
+            this.BackButton.Location = new System.Drawing.Point(29, 316);
             this.BackButton.Name = "BackButton";
             this.BackButton.Size = new System.Drawing.Size(35, 39);
             this.BackButton.TabIndex = 14;
@@ -107,7 +107,7 @@
             // 
             // deleteButton
             // 
-            this.deleteButton.Location = new System.Drawing.Point(29, 344);
+            this.deleteButton.Location = new System.Drawing.Point(29, 361);
             this.deleteButton.Name = "deleteButton";
             this.deleteButton.Size = new System.Drawing.Size(496, 42);
             this.deleteButton.TabIndex = 13;

@@ -55,10 +55,14 @@ namespace HarrisMichael_CodeExercise2
             conn = DBUtils.Connect(connString);
 
             yearUD.Enabled = false;
+            yearUD.Controls[0].Visible = false;
 
+           
             RetrieveData();
 
         }
+
+        //Data for the Movie objects
         public Movie mo
         {
             get
@@ -83,7 +87,7 @@ namespace HarrisMichael_CodeExercise2
         }
         private bool RetrieveData()
         {
-
+            //Sql statement to grab the data
             string sql = "SELECT Title, YearReleased, Publisher, Author, Genre FROM SeriesTitles";
 
             MySqlDataAdapter adaptr = new MySqlDataAdapter(sql, conn);
@@ -129,6 +133,7 @@ namespace HarrisMichael_CodeExercise2
             return true;
         }
 
+        //Fills the ui controls with clicked data
         private void MovieLB_DoubleClick(object sender, EventArgs e)
         {
             if (MovieLB.SelectedItems != null)
@@ -143,6 +148,7 @@ namespace HarrisMichael_CodeExercise2
             }
         }
 
+        //Deletes the selected item
         private void deleteButton_Click(object sender, EventArgs e)
         {
             foreach (ListViewItem lvi in MovieLB.Items)
