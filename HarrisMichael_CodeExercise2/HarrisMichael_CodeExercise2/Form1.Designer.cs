@@ -35,7 +35,6 @@
             this.ForwardButton = new System.Windows.Forms.Button();
             this.BackButton = new System.Windows.Forms.Button();
             this.deleteButton = new System.Windows.Forms.Button();
-            this.saveButton = new System.Windows.Forms.Button();
             this.yearUD = new System.Windows.Forms.NumericUpDown();
             this.MovieLB = new System.Windows.Forms.ListView();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
@@ -68,7 +67,6 @@
             this.ControlsGB.Controls.Add(this.ForwardButton);
             this.ControlsGB.Controls.Add(this.BackButton);
             this.ControlsGB.Controls.Add(this.deleteButton);
-            this.ControlsGB.Controls.Add(this.saveButton);
             this.ControlsGB.Controls.Add(this.yearUD);
             this.ControlsGB.Controls.Add(this.MovieLB);
             this.ControlsGB.Controls.Add(this.genreLabel);
@@ -109,23 +107,13 @@
             // 
             // deleteButton
             // 
-            this.deleteButton.Location = new System.Drawing.Point(288, 344);
+            this.deleteButton.Location = new System.Drawing.Point(29, 344);
             this.deleteButton.Name = "deleteButton";
-            this.deleteButton.Size = new System.Drawing.Size(237, 42);
+            this.deleteButton.Size = new System.Drawing.Size(496, 42);
             this.deleteButton.TabIndex = 13;
             this.deleteButton.Text = "Delete";
             this.deleteButton.UseVisualStyleBackColor = true;
             this.deleteButton.Click += new System.EventHandler(this.deleteButton_Click);
-            // 
-            // saveButton
-            // 
-            this.saveButton.Location = new System.Drawing.Point(29, 344);
-            this.saveButton.Name = "saveButton";
-            this.saveButton.Size = new System.Drawing.Size(253, 42);
-            this.saveButton.TabIndex = 12;
-            this.saveButton.Text = "Save";
-            this.saveButton.UseVisualStyleBackColor = true;
-            this.saveButton.Click += new System.EventHandler(this.saveButton_Click);
             // 
             // yearUD
             // 
@@ -141,6 +129,7 @@
             0,
             0});
             this.yearUD.Name = "yearUD";
+            this.yearUD.ReadOnly = true;
             this.yearUD.Size = new System.Drawing.Size(261, 31);
             this.yearUD.TabIndex = 11;
             this.yearUD.Value = new decimal(new int[] {
@@ -282,7 +271,6 @@
         private System.Windows.Forms.NumericUpDown yearUD;
         private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.Button deleteButton;
-        private System.Windows.Forms.Button saveButton;
         private System.Windows.Forms.Button ForwardButton;
         private System.Windows.Forms.Button BackButton;
     }
