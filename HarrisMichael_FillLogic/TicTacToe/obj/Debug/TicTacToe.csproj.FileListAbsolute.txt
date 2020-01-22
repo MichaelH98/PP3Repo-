@@ -7,3 +7,12 @@ c:\users\lee lewis\documents\visual studio 2017\Projects\TicTacToe\TicTacToe\obj
 c:\users\lee lewis\documents\visual studio 2017\Projects\TicTacToe\TicTacToe\obj\Debug\TicTacToe.csproj.GenerateResource.Cache
 c:\users\lee lewis\documents\visual studio 2017\Projects\TicTacToe\TicTacToe\obj\Debug\TicTacToe.exe
 c:\users\lee lewis\documents\visual studio 2017\Projects\TicTacToe\TicTacToe\obj\Debug\TicTacToe.pdb
+\\vmware-host\Shared Folders\Desktop\PP3Repo-master\HarrisMichael_FillLogic\TicTacToe\bin\Debug\TicTacToe.exe.config
+\\vmware-host\Shared Folders\Desktop\PP3Repo-master\HarrisMichael_FillLogic\TicTacToe\bin\Debug\TicTacToe.exe
+\\vmware-host\Shared Folders\Desktop\PP3Repo-master\HarrisMichael_FillLogic\TicTacToe\bin\Debug\TicTacToe.pdb
+\\vmware-host\Shared Folders\Desktop\PP3Repo-master\HarrisMichael_FillLogic\TicTacToe\obj\Debug\TicTacToe.csprojAssemblyReference.cache
+\\vmware-host\Shared Folders\Desktop\PP3Repo-master\HarrisMichael_FillLogic\TicTacToe\obj\Debug\TicTacToe.frmTicTacToe.resources
+\\vmware-host\Shared Folders\Desktop\PP3Repo-master\HarrisMichael_FillLogic\TicTacToe\obj\Debug\TicTacToe.Properties.Resources.resources
+\\vmware-host\Shared Folders\Desktop\PP3Repo-master\HarrisMichael_FillLogic\TicTacToe\obj\Debug\TicTacToe.csproj.GenerateResource.cache
+\\vmware-host\Shared Folders\Desktop\PP3Repo-master\HarrisMichael_FillLogic\TicTacToe\obj\Debug\TicTacToe.exe
+\\vmware-host\Shared Folders\Desktop\PP3Repo-master\HarrisMichael_FillLogic\TicTacToe\obj\Debug\TicTacToe.pdb

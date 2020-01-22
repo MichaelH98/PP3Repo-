@@ -12,8 +12,8 @@ namespace TicTacToe
 {
     public partial class frmTicTacToe : Form
     {
-        // NAME:
-        // CLASS AND TERM:
+        // NAME: Michael Harris
+        // CLASS AND TERM: DVP3 2001
         // PROJECT: Tic Tac Toe
 
         /* THINGS TO CONSIDER:
@@ -34,6 +34,29 @@ namespace TicTacToe
         public frmTicTacToe()
         {
             InitializeComponent();
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void redToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (blueToolStripMenuItem.Checked)
+            {
+                blueToolStripMenuItem.Checked = false;
+                redToolStripMenuItem.Checked = true;
+            }
+        }
+
+        private void blueToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (redToolStripMenuItem.Checked)
+            {
+                redToolStripMenuItem.Checked = false;
+                blueToolStripMenuItem.Checked = true;
+            }
         }
     }
 }
