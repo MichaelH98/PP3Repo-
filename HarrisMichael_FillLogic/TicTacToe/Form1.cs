@@ -34,6 +34,26 @@ namespace TicTacToe
         public frmTicTacToe()
         {
             InitializeComponent();
+            //Written by Keith Webster.  Used with permission.  Not to be distributed.  
+            //Place this inside the class space in the form you would like to size.
+            //Call this method AFTER InitializeComponent() inside the form's constructor.
+            void HandleClientWindowSize()
+            {
+                //Modify ONLY these float values
+                float HeightValueToChange = 1.4f;
+                float WidthValueToChange = 6.0f;
+
+                //DO NOT MODIFY THIS CODE
+                int height = Convert.ToInt32(Screen.PrimaryScreen.WorkingArea.Size.Height / HeightValueToChange);
+                int width = Convert.ToInt32(Screen.PrimaryScreen.WorkingArea.Size.Width / WidthValueToChange);
+                if (height < Size.Height)
+                    height = Size.Height;
+                if (width < Size.Width)
+                    width = Size.Width;
+                this.Size = new Size(width, height);
+                //this.Size = new Size(376, 720);
+            }
+
         }
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
@@ -47,6 +67,16 @@ namespace TicTacToe
             {
                 blueToolStripMenuItem.Checked = false;
                 redToolStripMenuItem.Checked = true;
+
+                r1c1button.ImageList = redImages;
+                r1c2button.ImageList = redImages;
+                r1c3button.ImageList = redImages;
+                r2c1button.ImageList = redImages;
+                r2c2button.ImageList = redImages;
+                r2c3button.ImageList = redImages;
+                r3c1button.ImageList = redImages;
+                r3c2button.ImageList = redImages;
+                r3c3button.ImageList = redImages;
             }
         }
 
@@ -56,6 +86,16 @@ namespace TicTacToe
             {
                 redToolStripMenuItem.Checked = false;
                 blueToolStripMenuItem.Checked = true;
+
+                r1c1button.ImageList = blueImages;
+                r1c2button.ImageList = blueImages;
+                r1c3button.ImageList = blueImages;
+                r2c1button.ImageList = blueImages;
+                r2c2button.ImageList = blueImages;
+                r2c3button.ImageList = blueImages;
+                r3c1button.ImageList = blueImages;
+                r3c2button.ImageList = blueImages;
+                r3c3button.ImageList = blueImages;
             }
         }
     }

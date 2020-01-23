@@ -73,7 +73,7 @@
             this.selectToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(518, 42);
+            this.menuStrip1.Size = new System.Drawing.Size(661, 40);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -176,7 +176,7 @@
             // r1c1button
             // 
             this.r1c1button.ImageList = this.blueImages;
-            this.r1c1button.Location = new System.Drawing.Point(12, 94);
+            this.r1c1button.Location = new System.Drawing.Point(99, 370);
             this.r1c1button.Name = "r1c1button";
             this.r1c1button.Size = new System.Drawing.Size(150, 150);
             this.r1c1button.TabIndex = 1;
@@ -185,7 +185,7 @@
             // r1c2button
             // 
             this.r1c2button.ImageList = this.blueImages;
-            this.r1c2button.Location = new System.Drawing.Point(179, 94);
+            this.r1c2button.Location = new System.Drawing.Point(266, 370);
             this.r1c2button.Name = "r1c2button";
             this.r1c2button.Size = new System.Drawing.Size(150, 150);
             this.r1c2button.TabIndex = 2;
@@ -194,7 +194,7 @@
             // r1c3button
             // 
             this.r1c3button.ImageList = this.blueImages;
-            this.r1c3button.Location = new System.Drawing.Point(345, 94);
+            this.r1c3button.Location = new System.Drawing.Point(432, 370);
             this.r1c3button.Name = "r1c3button";
             this.r1c3button.Size = new System.Drawing.Size(150, 150);
             this.r1c3button.TabIndex = 3;
@@ -203,7 +203,7 @@
             // r2c1button
             // 
             this.r2c1button.ImageList = this.blueImages;
-            this.r2c1button.Location = new System.Drawing.Point(12, 260);
+            this.r2c1button.Location = new System.Drawing.Point(99, 536);
             this.r2c1button.Name = "r2c1button";
             this.r2c1button.Size = new System.Drawing.Size(150, 150);
             this.r2c1button.TabIndex = 4;
@@ -212,7 +212,7 @@
             // r2c2button
             // 
             this.r2c2button.ImageList = this.blueImages;
-            this.r2c2button.Location = new System.Drawing.Point(179, 260);
+            this.r2c2button.Location = new System.Drawing.Point(266, 536);
             this.r2c2button.Name = "r2c2button";
             this.r2c2button.Size = new System.Drawing.Size(150, 150);
             this.r2c2button.TabIndex = 5;
@@ -221,7 +221,7 @@
             // r2c3button
             // 
             this.r2c3button.ImageList = this.blueImages;
-            this.r2c3button.Location = new System.Drawing.Point(345, 260);
+            this.r2c3button.Location = new System.Drawing.Point(432, 536);
             this.r2c3button.Name = "r2c3button";
             this.r2c3button.Size = new System.Drawing.Size(150, 150);
             this.r2c3button.TabIndex = 6;
@@ -230,7 +230,7 @@
             // r3c1button
             // 
             this.r3c1button.ImageList = this.blueImages;
-            this.r3c1button.Location = new System.Drawing.Point(12, 426);
+            this.r3c1button.Location = new System.Drawing.Point(99, 702);
             this.r3c1button.Name = "r3c1button";
             this.r3c1button.Size = new System.Drawing.Size(150, 150);
             this.r3c1button.TabIndex = 7;
@@ -239,7 +239,7 @@
             // r3c2button
             // 
             this.r3c2button.ImageList = this.blueImages;
-            this.r3c2button.Location = new System.Drawing.Point(179, 426);
+            this.r3c2button.Location = new System.Drawing.Point(266, 702);
             this.r3c2button.Name = "r3c2button";
             this.r3c2button.Size = new System.Drawing.Size(150, 150);
             this.r3c2button.TabIndex = 8;
@@ -248,7 +248,7 @@
             // r3c3button
             // 
             this.r3c3button.ImageList = this.blueImages;
-            this.r3c3button.Location = new System.Drawing.Point(345, 426);
+            this.r3c3button.Location = new System.Drawing.Point(432, 702);
             this.r3c3button.Name = "r3c3button";
             this.r3c3button.Size = new System.Drawing.Size(150, 150);
             this.r3c3button.TabIndex = 9;
@@ -259,9 +259,9 @@
             this.toolStrip1.ImageScalingSize = new System.Drawing.Size(32, 32);
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripButton1});
-            this.toolStrip1.Location = new System.Drawing.Point(0, 42);
+            this.toolStrip1.Location = new System.Drawing.Point(0, 40);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(518, 42);
+            this.toolStrip1.Size = new System.Drawing.Size(661, 42);
             this.toolStrip1.TabIndex = 10;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -279,7 +279,7 @@
             // 
             this.label1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label1.Location = new System.Drawing.Point(168, 88);
+            this.label1.Location = new System.Drawing.Point(255, 364);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(6, 500);
             this.label1.TabIndex = 11;
@@ -288,7 +288,7 @@
             // 
             this.label2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label2.Location = new System.Drawing.Point(333, 87);
+            this.label2.Location = new System.Drawing.Point(420, 363);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(6, 500);
             this.label2.TabIndex = 12;
@@ -296,7 +296,7 @@
             // label3
             // 
             this.label3.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label3.Location = new System.Drawing.Point(10, 250);
+            this.label3.Location = new System.Drawing.Point(97, 526);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(490, 4);
             this.label3.TabIndex = 13;
@@ -305,7 +305,7 @@
             // label4
             // 
             this.label4.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label4.Location = new System.Drawing.Point(10, 416);
+            this.label4.Location = new System.Drawing.Point(97, 692);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(490, 4);
             this.label4.TabIndex = 14;
@@ -315,8 +315,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(518, 599);
+            this.BackgroundImage = global::TicTacToe.Properties.Resources.iPhone7Image;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(661, 1280);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -332,6 +335,7 @@
             this.Controls.Add(this.r1c2button);
             this.Controls.Add(this.r1c1button);
             this.Controls.Add(this.menuStrip1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "frmTicTacToe";
             this.Text = "Tic Tac Toe";
