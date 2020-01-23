@@ -131,6 +131,7 @@ namespace TicTacToe
             }
             turn = !turn;
             btn.Enabled = false;
+            turnCount++;
 
             WinCheck();
         }
@@ -155,6 +156,8 @@ namespace TicTacToe
 
             if (checkForWin)
             {
+                disableButtons();
+
                 string winner = "";
                 if (turn)
                 {
@@ -164,9 +167,34 @@ namespace TicTacToe
                 {
                     winner = "X";
                 }
-                MessageBox.Show(winner+" Wins");
+                MessageBox.Show(winner + " Wins");
             }
+            else
+            {
+                if (turnCount == 9)
+                {
+                    MessageBox.Show("Draw","GG!");
+                }
+            }
+            
             //Vertical Check
+        }
+        
+        private void disableButtons()
+        {
+            try
+            {
+                foreach (Control c in Controls)
+                {
+                    Button btn = (Button)c;
+
+                    btn.Enabled = false;
+                }
+            }
+            catch
+            {
+
+            }
         }
     }
 }
