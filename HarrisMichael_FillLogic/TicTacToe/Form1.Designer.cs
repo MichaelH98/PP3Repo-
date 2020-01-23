@@ -85,7 +85,7 @@
             this.toolStripSeparator1,
             this.exitToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(72, 38);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(72, 36);
             this.fileToolStripMenuItem.Text = "File";
             // 
             // loadGameToolStripMenuItem
@@ -118,7 +118,7 @@
             this.blueToolStripMenuItem,
             this.redToolStripMenuItem});
             this.viewToolStripMenuItem.Name = "viewToolStripMenuItem";
-            this.viewToolStripMenuItem.Size = new System.Drawing.Size(86, 38);
+            this.viewToolStripMenuItem.Size = new System.Drawing.Size(86, 36);
             this.viewToolStripMenuItem.Text = "View";
             // 
             // blueToolStripMenuItem
@@ -127,14 +127,14 @@
             this.blueToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
             this.blueToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.blueToolStripMenuItem.Name = "blueToolStripMenuItem";
-            this.blueToolStripMenuItem.Size = new System.Drawing.Size(359, 44);
+            this.blueToolStripMenuItem.Size = new System.Drawing.Size(196, 44);
             this.blueToolStripMenuItem.Text = "Blue";
             this.blueToolStripMenuItem.Click += new System.EventHandler(this.blueToolStripMenuItem_Click);
             // 
             // redToolStripMenuItem
             // 
             this.redToolStripMenuItem.Name = "redToolStripMenuItem";
-            this.redToolStripMenuItem.Size = new System.Drawing.Size(359, 44);
+            this.redToolStripMenuItem.Size = new System.Drawing.Size(196, 44);
             this.redToolStripMenuItem.Text = "Red";
             this.redToolStripMenuItem.Click += new System.EventHandler(this.redToolStripMenuItem_Click);
             // 
@@ -144,7 +144,7 @@
             this.xToolStripMenuItem,
             this.oToolStripMenuItem});
             this.selectToolStripMenuItem.Name = "selectToolStripMenuItem";
-            this.selectToolStripMenuItem.Size = new System.Drawing.Size(99, 38);
+            this.selectToolStripMenuItem.Size = new System.Drawing.Size(99, 36);
             this.selectToolStripMenuItem.Text = "Select";
             // 
             // xToolStripMenuItem
@@ -181,6 +181,7 @@
             this.r1c1button.Size = new System.Drawing.Size(150, 150);
             this.r1c1button.TabIndex = 1;
             this.r1c1button.UseVisualStyleBackColor = true;
+            this.r1c1button.Click += new System.EventHandler(this.button_click);
             // 
             // r1c2button
             // 
@@ -190,6 +191,7 @@
             this.r1c2button.Size = new System.Drawing.Size(150, 150);
             this.r1c2button.TabIndex = 2;
             this.r1c2button.UseVisualStyleBackColor = true;
+            this.r1c2button.Click += new System.EventHandler(this.button_click);
             // 
             // r1c3button
             // 
@@ -199,6 +201,7 @@
             this.r1c3button.Size = new System.Drawing.Size(150, 150);
             this.r1c3button.TabIndex = 3;
             this.r1c3button.UseVisualStyleBackColor = true;
+            this.r1c3button.Click += new System.EventHandler(this.button_click);
             // 
             // r2c1button
             // 
@@ -208,6 +211,7 @@
             this.r2c1button.Size = new System.Drawing.Size(150, 150);
             this.r2c1button.TabIndex = 4;
             this.r2c1button.UseVisualStyleBackColor = true;
+            this.r2c1button.Click += new System.EventHandler(this.button_click);
             // 
             // r2c2button
             // 
@@ -217,6 +221,7 @@
             this.r2c2button.Size = new System.Drawing.Size(150, 150);
             this.r2c2button.TabIndex = 5;
             this.r2c2button.UseVisualStyleBackColor = true;
+            this.r2c2button.Click += new System.EventHandler(this.button_click);
             // 
             // r2c3button
             // 
@@ -226,6 +231,7 @@
             this.r2c3button.Size = new System.Drawing.Size(150, 150);
             this.r2c3button.TabIndex = 6;
             this.r2c3button.UseVisualStyleBackColor = true;
+            this.r2c3button.Click += new System.EventHandler(this.button_click);
             // 
             // r3c1button
             // 
@@ -235,6 +241,7 @@
             this.r3c1button.Size = new System.Drawing.Size(150, 150);
             this.r3c1button.TabIndex = 7;
             this.r3c1button.UseVisualStyleBackColor = true;
+            this.r3c1button.Click += new System.EventHandler(this.button_click);
             // 
             // r3c2button
             // 
@@ -244,6 +251,7 @@
             this.r3c2button.Size = new System.Drawing.Size(150, 150);
             this.r3c2button.TabIndex = 8;
             this.r3c2button.UseVisualStyleBackColor = true;
+            this.r3c2button.Click += new System.EventHandler(this.button_click);
             // 
             // r3c3button
             // 
@@ -253,6 +261,7 @@
             this.r3c3button.Size = new System.Drawing.Size(150, 150);
             this.r3c3button.TabIndex = 9;
             this.r3c3button.UseVisualStyleBackColor = true;
+            this.r3c3button.Click += new System.EventHandler(this.button_click);
             // 
             // toolStrip1
             // 
@@ -274,6 +283,7 @@
             this.toolStripButton1.RightToLeftAutoMirrorImage = true;
             this.toolStripButton1.Size = new System.Drawing.Size(136, 36);
             this.toolStripButton1.Text = "New Game";
+            this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
             // 
             // label1
             // 
@@ -339,6 +349,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "frmTicTacToe";
             this.Text = "Tic Tac Toe";
+            this.Load += new System.EventHandler(this.frmTicTacToe_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.toolStrip1.ResumeLayout(false);

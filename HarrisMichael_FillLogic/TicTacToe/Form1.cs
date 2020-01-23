@@ -31,6 +31,12 @@ namespace TicTacToe
               file.
         */
 
+        //True = X turn, False = O Turn
+        bool turn = true;
+
+
+        int turnCount = 0;
+
         public frmTicTacToe()
         {
             InitializeComponent();
@@ -97,6 +103,70 @@ namespace TicTacToe
                 r3c2button.ImageList = blueImages;
                 r3c3button.ImageList = blueImages;
             }
+        }
+
+        private void toolStripButton1_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void frmTicTacToe_Load(object sender, EventArgs e)
+        {
+            //Add action for all buttons
+            
+        }
+
+        private void button_click(object sender, EventArgs e)
+        {
+            //Works but i need to use the images in the imagelist
+            Button btn = (Button)sender;
+            if (turn)
+            {
+                btn.Text = "X";
+
+            }
+            else
+            {
+                btn.Text = "O";
+            }
+            turn = !turn;
+            btn.Enabled = false;
+
+            WinCheck();
+        }
+
+        private void WinCheck()
+        {
+            bool checkForWin = false;
+
+            //Horizonal Check
+            if ((r1c1button.Text == r1c2button.Text) && (r1c2button.Text == r1c3button.Text) && (!r1c1button.Enabled))
+            {
+                checkForWin = true;
+            }
+            else if ((r2c1button.Text == r2c2button.Text) && (r2c2button.Text == r2c3button.Text) && (!r2c1button.Enabled))
+            {
+                checkForWin = true;
+            }
+            else if ((r3c1button.Text == r3c2button.Text) && (r3c2button.Text == r3c3button.Text) && (!r3c1button.Enabled))
+            {
+                checkForWin = true;
+            }
+
+            if (checkForWin)
+            {
+                string winner = "";
+                if (turn)
+                {
+                    winner = "O";
+                }
+                else
+                {
+                    winner = "X";
+                }
+                MessageBox.Show(winner+" Wins");
+            }
+            //Vertical Check
         }
     }
 }
