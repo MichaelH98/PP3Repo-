@@ -108,6 +108,25 @@ namespace TicTacToe
         private void toolStripButton1_Click(object sender, EventArgs e)
         {
             
+            r1c1button.ImageIndex = -1;
+            r1c1button.Enabled = true;
+            r1c2button.ImageIndex = -1;
+            r1c2button.Enabled = true;
+            r1c3button.ImageIndex = -1;
+            r1c3button.Enabled = true;
+            r2c1button.ImageIndex = -1;
+            r2c1button.Enabled = true;
+            r2c2button.ImageIndex = -1;
+            r2c2button.Enabled = true;
+            r2c3button.ImageIndex = -1;
+            r2c3button.Enabled = true;
+            r3c1button.ImageIndex = -1;
+            r3c1button.Enabled = true;
+            r3c2button.ImageIndex = -1;
+            r3c2button.Enabled = true;
+            r3c3button.ImageIndex = -1;
+            r3c3button.Enabled = true;
+
         }
 
         private void frmTicTacToe_Load(object sender, EventArgs e)
@@ -182,6 +201,7 @@ namespace TicTacToe
             {
                 checkForWin = true;
             }
+            
 
 
             if (checkForWin)
