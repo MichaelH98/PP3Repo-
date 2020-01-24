@@ -32,8 +32,8 @@ namespace TicTacToe
         */
 
         //True = X turn, False = O Turn
-        bool turn = true;
 
+        bool playerTurn = true;
 
         int turnCount = 0;
 
@@ -120,16 +120,21 @@ namespace TicTacToe
         {
             //Works but i need to use the images in the imagelist
             Button btn = (Button)sender;
-            if (turn)
-            {
-                btn.Text = "X";
 
+            btn.ImageIndex = -1;
+            //check to see if the user selected x or o
+
+            if (playerTurn)
+            {
+                btn.ImageIndex = 0;
             }
             else
             {
-                btn.Text = "O";
+                btn.ImageIndex = 1;
             }
-            turn = !turn;
+
+            playerTurn = !playerTurn;
+
             btn.Enabled = false;
             turnCount++;
 
@@ -141,31 +146,58 @@ namespace TicTacToe
             bool checkForWin = false;
 
             //Horizonal Check
-            if ((r1c1button.Text == r1c2button.Text) && (r1c2button.Text == r1c3button.Text) && (!r1c1button.Enabled))
+            if ((r1c1button.ImageIndex == r1c2button.ImageIndex) && (r1c2button.ImageIndex == r1c3button.ImageIndex) && (r1c1button.ImageIndex >=0))
             {
                 checkForWin = true;
             }
-            else if ((r2c1button.Text == r2c2button.Text) && (r2c2button.Text == r2c3button.Text) && (!r2c1button.Enabled))
+            else if ((r2c1button.ImageIndex == r2c2button.ImageIndex) && (r2c2button.ImageIndex == r2c3button.ImageIndex) && (r2c1button.ImageIndex >=0))
             {
                 checkForWin = true;
             }
-            else if ((r3c1button.Text == r3c2button.Text) && (r3c2button.Text == r3c3button.Text) && (!r3c1button.Enabled))
+            else if ((r3c1button.ImageIndex == r3c2button.ImageIndex) && (r3c2button.ImageIndex == r3c3button.ImageIndex) && (r3c1button.ImageIndex >=0))
             {
                 checkForWin = true;
             }
+
+            //Vertical Check
+            if ((r1c1button.ImageIndex == r2c1button.ImageIndex) && (r2c1button.ImageIndex == r3c1button.ImageIndex) && (r1c1button.ImageIndex >= 0))
+            {
+                checkForWin = true;
+            }
+            else if ((r2c1button.ImageIndex == r2c2button.ImageIndex) && (r2c2button.ImageIndex == r2c3button.ImageIndex) && (r2c1button.ImageIndex >= 0))
+            {
+                checkForWin = true;
+            }
+            else if ((r1c3button.ImageIndex == r2c3button.ImageIndex) && (r2c3button.ImageIndex == r3c3button.ImageIndex) && (r3c1button.ImageIndex >= 0))
+            {
+                checkForWin = true;
+            }
+
+            //Diagnal Check
+            if ((r1c1button.ImageIndex == r2c2button.ImageIndex) && (r2c2button.ImageIndex == r3c3button.ImageIndex) && (r1c1button.ImageIndex >= 0))
+            {
+                checkForWin = true;
+            }
+            else if ((r1c3button.ImageIndex == r2c2button.ImageIndex) && (r2c2button.ImageIndex == r3c1button.ImageIndex) && (r2c1button.ImageIndex >= 0))
+            {
+                checkForWin = true;
+            }
+
 
             if (checkForWin)
             {
+                //Disable Buttons doesnt work
                 disableButtons();
 
                 string winner = "";
-                if (turn)
+
+                if (playerTurn)
                 {
-                    winner = "O";
+                    winner = "X";
                 }
                 else
                 {
-                    winner = "X";
+                    winner = "O";
                 }
                 MessageBox.Show(winner + " Wins");
             }
@@ -177,7 +209,7 @@ namespace TicTacToe
                 }
             }
             
-            //Vertical Check
+            
         }
         
         private void disableButtons()

@@ -149,14 +149,16 @@
             // 
             // xToolStripMenuItem
             // 
+            this.xToolStripMenuItem.Checked = true;
+            this.xToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
             this.xToolStripMenuItem.Name = "xToolStripMenuItem";
-            this.xToolStripMenuItem.Size = new System.Drawing.Size(167, 44);
+            this.xToolStripMenuItem.Size = new System.Drawing.Size(359, 44);
             this.xToolStripMenuItem.Text = "X";
             // 
             // oToolStripMenuItem
             // 
             this.oToolStripMenuItem.Name = "oToolStripMenuItem";
-            this.oToolStripMenuItem.Size = new System.Drawing.Size(167, 44);
+            this.oToolStripMenuItem.Size = new System.Drawing.Size(359, 44);
             this.oToolStripMenuItem.Text = "O";
             // 
             // redImages
