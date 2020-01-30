@@ -10,6 +10,8 @@ using System.Windows.Forms;
 using System.IO;
 using System.Net;
 using Newtonsoft.Json.Linq;
+using RestSharp;
+using unirest_net.http;
 
 namespace HarrisMichael_FinalApp
 {
@@ -40,11 +42,71 @@ namespace HarrisMichael_FinalApp
             }
         }
 
-        //Api Connection
+        string startApi = $"http://www.omdbapi.com/?i=tt3896198&apikey=160c8cc1";
+
         WebClient apiConnection = new WebClient();
-        string startApi = "https://movie-database-imdb-alternative.p.rapidapi.com/?page=1&r=json&s=Avengers%20Endgame/apikey=344ffb430bmsh8c907a15aaf7c31p166f05jsnc09e2c731b9a";
-        string apiEndpoint;
 
+        private void grabButton_Click(object sender, EventArgs e)
+        {
+            //Sets the textbox to the api string
+            urlTB.Text = startApi;
+            try
+            {
+                WebRequest rq = HttpWebRequest.Create("http://www.omdbapi.com/?i=tt3896198&apikey=160c8cc1&t="+TitleTB.Text);
+                WebResponse rp = rq.GetResponse();
+                StreamReader sr = new StreamReader(rp.GetResponseStream());
 
+                string Movie_JSON = sr.ReadToEnd();
+
+                Movie myM = Newtonsoft.Json.JsonConvert.DeserializeObject<Movie>(Movie_JSON);
+
+                //Now to parse all of the data
+                TitleTB.Text = myM.Title;
+                YearTB.Text = myM.Year;
+                RatedTB.Text = myM.Rated;
+                GenreTB.Text = myM.Genre;
+                DirectorTB.Text = myM.Director;
+
+            }
+            catch(Exception m)
+            {
+                MessageBox.Show(m.Message);
+            }
+        }
+
+        public class Rating
+        {
+            public string Source { get; set; }
+            public string Value { get; set; }
+        }
+
+        public class Movie
+        {
+            public string Title { get; set; }
+            public string Year { get; set; }
+            public string Rated { get; set; }
+            public string Released { get; set; }
+            public string Runtime { get; set; }
+            public string Genre { get; set; }
+            public string Director { get; set; }
+            public string Writer { get; set; }
+            public string Actors { get; set; }
+            public string Plot { get; set; }
+            public string Language { get; set; }
+            public string Country { get; set; }
+            public string Awards { get; set; }
+            public string Poster { get; set; }
+            public List<Rating> Ratings { get; set; }
+            public string Metascore { get; set; }
+            public string imdbRating { get; set; }
+            public string imdbVotes { get; set; }
+            public string imdbID { get; set; }
+            public string Type { get; set; }
+            public string DVD { get; set; }
+            public string BoxOffice { get; set; }
+            public string Production { get; set; }
+            public string Website { get; set; }
+            public string Response { get; set; }
+        }
     }
 }
