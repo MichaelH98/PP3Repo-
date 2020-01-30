@@ -12,14 +12,29 @@ using System.Net;
 using Newtonsoft.Json.Linq;
 using RestSharp;
 using unirest_net.http;
+using MySql.Data.MySqlClient;
 
 namespace HarrisMichael_FinalApp
 {
     public partial class Form1 : Form
     {
+        MySqlConnection conn = new MySqlConnection();
+
+
+        DataTable theData = new DataTable();
+
+        int currentR = 0;
+        int addTo = 0;
+
         public Form1()
         {
             InitializeComponent();
+
+            //call method to build the connection string
+            string connString = DBUtils.BuildConnectionString();
+
+            //invoke the method to make the connection
+            conn = DBUtils.Connect(connString);
 
             //Written by Keith Webster.  Used with permission.  Not to be distributed.  
             //Place this inside the class space in the form you would like to size.
@@ -107,6 +122,47 @@ namespace HarrisMichael_FinalApp
             public string Production { get; set; }
             public string Website { get; set; }
             public string Response { get; set; }
+        }
+
+        private void SaveDBButton_Click(object sender, EventArgs e)
+        {
+
+            //When i click this button the current data on the form is saved to the database in the appropriate table and rows
+
+
+            string sql = "INSERT INTO Movies (title,year,rating,genre,director)";
+
+
+            MySqlDataAdapter adaptr = new MySqlDataAdapter(sql, conn);
+
+            //set the command type for the select
+            adaptr.SelectCommand.CommandType = CommandType.Text;
+
+            adaptr.Fill(theData);
+
+
+            TitleTB.Text = theData.Rows[currentR]["title"].ToString();
+            YearTB.Text = theData.Rows[currentR]["year"].ToString();
+            RatedTB.Text = theData.Rows[currentR]["rating"].ToString();
+            GenreTB.Text = theData.Rows[currentR]["genre"].ToString();
+            DirectorTB.Text = theData.Rows[currentR]["director"].ToString();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         }
     }
 }

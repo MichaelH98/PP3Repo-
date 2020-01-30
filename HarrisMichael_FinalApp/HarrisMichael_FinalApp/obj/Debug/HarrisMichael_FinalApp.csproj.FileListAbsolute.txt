@@ -25,3 +25,11 @@
 \\vmware-host\Shared Folders\Desktop\PP3Repo-master\HarrisMichael_FinalApp\HarrisMichael_FinalApp\bin\Debug\System.Net.Http.Primitives.xml
 \\vmware-host\Shared Folders\Desktop\PP3Repo-master\HarrisMichael_FinalApp\HarrisMichael_FinalApp\bin\Debug\System.Net.Http.Formatting.dll
 \\vmware-host\Shared Folders\Desktop\PP3Repo-master\HarrisMichael_FinalApp\HarrisMichael_FinalApp\bin\Debug\System.Net.Http.Formatting.xml
+\\vmware-host\Shared Folders\Desktop\PP3Repo-master\HarrisMichael_FinalApp\HarrisMichael_FinalApp\bin\Debug\BouncyCastle.Crypto.dll
+\\vmware-host\Shared Folders\Desktop\PP3Repo-master\HarrisMichael_FinalApp\HarrisMichael_FinalApp\bin\Debug\Google.Protobuf.dll
+\\vmware-host\Shared Folders\Desktop\PP3Repo-master\HarrisMichael_FinalApp\HarrisMichael_FinalApp\bin\Debug\MySql.Data.dll
+\\vmware-host\Shared Folders\Desktop\PP3Repo-master\HarrisMichael_FinalApp\HarrisMichael_FinalApp\bin\Debug\Renci.SshNet.dll
+\\vmware-host\Shared Folders\Desktop\PP3Repo-master\HarrisMichael_FinalApp\HarrisMichael_FinalApp\bin\Debug\Ubiety.Dns.Core.dll
+\\vmware-host\Shared Folders\Desktop\PP3Repo-master\HarrisMichael_FinalApp\HarrisMichael_FinalApp\bin\Debug\Google.Protobuf.xml
+\\vmware-host\Shared Folders\Desktop\PP3Repo-master\HarrisMichael_FinalApp\HarrisMichael_FinalApp\bin\Debug\MySql.Data.xml
+\\vmware-host\Shared Folders\Desktop\PP3Repo-master\HarrisMichael_FinalApp\HarrisMichael_FinalApp\bin\Debug\Renci.SshNet.xml
