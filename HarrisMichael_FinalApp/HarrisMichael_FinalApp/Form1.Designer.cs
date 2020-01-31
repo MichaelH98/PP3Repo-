@@ -43,6 +43,7 @@
             this.TitleTB = new System.Windows.Forms.TextBox();
             this.grabButton = new System.Windows.Forms.Button();
             this.urlTB = new System.Windows.Forms.TextBox();
+            this.clearButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.AppBackGroundColor)).BeginInit();
             this.MoiveGB.SuspendLayout();
             this.SuspendLayout();
@@ -59,6 +60,7 @@
             // MoiveGB
             // 
             this.MoiveGB.BackColor = System.Drawing.Color.Maroon;
+            this.MoiveGB.Controls.Add(this.clearButton);
             this.MoiveGB.Controls.Add(this.SaveDBButton);
             this.MoiveGB.Controls.Add(this.DirectorLB);
             this.MoiveGB.Controls.Add(this.DirectorTB);
@@ -83,7 +85,7 @@
             // SaveDBButton
             // 
             this.SaveDBButton.Image = global::HarrisMichael_FinalApp.Properties.Resources.download;
-            this.SaveDBButton.Location = new System.Drawing.Point(137, 565);
+            this.SaveDBButton.Location = new System.Drawing.Point(137, 453);
             this.SaveDBButton.Name = "SaveDBButton";
             this.SaveDBButton.Size = new System.Drawing.Size(329, 92);
             this.SaveDBButton.TabIndex = 12;
@@ -183,12 +185,12 @@
             // grabButton
             // 
             this.grabButton.BackColor = System.Drawing.Color.Goldenrod;
-            this.grabButton.BackgroundImage = global::HarrisMichael_FinalApp.Properties.Resources._1200x630wa;
-            this.grabButton.Image = global::HarrisMichael_FinalApp.Properties.Resources._1200x630wa;
-            this.grabButton.Location = new System.Drawing.Point(137, 423);
+            this.grabButton.ForeColor = System.Drawing.Color.Maroon;
+            this.grabButton.Location = new System.Drawing.Point(137, 561);
             this.grabButton.Name = "grabButton";
-            this.grabButton.Size = new System.Drawing.Size(329, 113);
+            this.grabButton.Size = new System.Drawing.Size(329, 91);
             this.grabButton.TabIndex = 1;
+            this.grabButton.Text = "Search";
             this.grabButton.UseVisualStyleBackColor = false;
             this.grabButton.Click += new System.EventHandler(this.grabButton_Click);
             // 
@@ -199,6 +201,17 @@
             this.urlTB.Name = "urlTB";
             this.urlTB.Size = new System.Drawing.Size(563, 31);
             this.urlTB.TabIndex = 0;
+            // 
+            // clearButton
+            // 
+            this.clearButton.BackColor = System.Drawing.Color.Maroon;
+            this.clearButton.Location = new System.Drawing.Point(53, 498);
+            this.clearButton.Name = "clearButton";
+            this.clearButton.Size = new System.Drawing.Size(78, 92);
+            this.clearButton.TabIndex = 13;
+            this.clearButton.Text = "Clear";
+            this.clearButton.UseVisualStyleBackColor = false;
+            this.clearButton.Click += new System.EventHandler(this.clearButton_Click);
             // 
             // Form1
             // 
@@ -238,6 +251,7 @@
         private System.Windows.Forms.Label DirectorLB;
         private System.Windows.Forms.TextBox DirectorTB;
         private System.Windows.Forms.Button SaveDBButton;
+        private System.Windows.Forms.Button clearButton;
     }
 }
 

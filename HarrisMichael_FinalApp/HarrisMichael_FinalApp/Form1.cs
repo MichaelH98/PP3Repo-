@@ -161,23 +161,16 @@ namespace HarrisMichael_FinalApp
                 }
                 
             }
-            
 
-            //MySqlDataAdapter adaptr = new MySqlDataAdapter(sql, conn);
+        }
 
-            ////set the command type for the select
-            //adaptr.SelectCommand.CommandType = CommandType.Text;
-
-            //adaptr.Fill(theData);
-
-
-            //TitleTB.Text = theData.Rows[currentR]["title"].ToString();
-            //YearTB.Text = theData.Rows[currentR]["year"].ToString();
-            //RatedTB.Text = theData.Rows[currentR]["rating"].ToString();
-            //GenreTB.Text = theData.Rows[currentR]["genre"].ToString();
-            //DirectorTB.Text = theData.Rows[currentR]["director"].ToString();
-
-
+        private void clearButton_Click(object sender, EventArgs e)
+        {
+            TitleTB.Clear();
+            YearTB.Clear();
+            RatedTB.Clear();
+            GenreTB.Clear();
+            DirectorTB.Clear();
 
         }
     }
