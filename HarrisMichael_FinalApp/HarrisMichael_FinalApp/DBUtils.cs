@@ -36,7 +36,7 @@ namespace HarrisMichael_FinalApp
             }
 
             // return the connection string
-            return "server=" + serverIP + ";userid=mjAdmin;pwd=password;database=FilmNation;SslMode=none;port=" + port;
+            return "server=" + serverIP + ";userid=dbsAdmin;pwd=password;database=FilmNation;SslMode=none;port=" + port;
         }
 
         // method to connect to the database
